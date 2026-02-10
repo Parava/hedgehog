@@ -1,0 +1,419 @@
+// сброс стилей
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+// сброс стилей
+
+body {
+    background-color: #f6f6f6;
+    overflow-y: scroll;
+}
+
+.content {
+    padding: 1.25em 1.5em 1.5em 1.5em;
+    margin-left: 11em;
+
+    // знаю что так не надо, но я не понял прикола почему так в википедии
+    margin-top: 79px;
+    // знаю что так не надо, но я не понял прикола почему так в википедии
+    border: 1px solid #a7d7f9;
+    border-right-width: 0;
+
+    background-color: var(--background-color-base, #fff);
+    color: var(--color-base, #202122);
+    direction: ltr;
+    padding: 1em;
+}
+
+.infobox {
+    width: 275px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    float: right;
+
+    margin-left: 1em;
+
+
+}
+
+.toc {
+    display: table;
+    padding: 7px;
+
+    background-color: var(--background-color-neutral-subtle, #f8f9fa);
+    border: 1px solid var(--border-color-base, #a2a9b1);
+
+    font-size: 95%;
+
+    ul {
+        list-style: none;
+        margin: 0.3em 0;
+        padding: 0;
+        text-align: start;
+
+        ul {
+            margin-inline-start: 2em;
+        }
+
+    }
+}
+
+h1 {
+    border-bottom: 1px solid var(--border-color-base, #a2a9b1);
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+.heading2 {
+
+    border-bottom: 1px solid var(--border-color-base, #a2a9b1);
+    display: flow-root;
+    margin-right: 25px;
+
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;
+    line-height: 1.375;
+
+    h2 {
+        font-weight: normal;
+    }
+}
+
+.heading3 {
+    font-weight: bold;
+
+    h3 {
+        font-size: 1.2em;
+
+    }
+}
+
+.toctitle {
+    text-align: center;
+}
+
+.left-image {
+    margin: 0.5em 1.4em 1.3em 0;
+    clear: left;
+    float: left;
+}
+
+.right-image {
+    margin: 0.5em 0 1.3em 1.4em;
+    clear: right;
+    float: right;
+}
+
+.collapsible {
+    text-align: center;
+}
+
+.ts-Taxonomy-rang-row {}
+
+.ts-Taxonomy-rang-label {}
+
+.ts-Taxonomy-rang-name {}
+
+
+// навгация
+.head {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+
+}
+
+.portlet {
+    position: absolute;
+    top: 6px;
+    right: 0.75em;
+}
+
+.vector-menu-contetn-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 10px;
+
+    #first-item {
+        background-position: left 0.33333333em;
+        background-image: url(../img/user-avatar.svg);
+        background-repeat: no-repeat;
+        background-size: 1.16666667em 1.16666667em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+    }
+
+}
+
+.vector-menu-content {
+    li {}
+}
+
+// левая сторона
+.left-navigation {
+    margin-left: 11em;
+    float: left;
+    // margin-left: 10em;
+    margin-top: 2.5em;
+    margin-bottom: -2.5em;
+
+}
+
+.left-nav {}
+
+.vector-menu-content-list {
+    ul {
+        // float: left;
+        // height: 100%;
+        // list-style: none;
+        // margin: 0;
+        // padding: 0;
+    }
+
+
+
+    li {
+
+        background-image: linear-gradient(to top, #77c1f6 0, #e8f2f8 1px, #fff 100%);
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        float: left;
+        display: block;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 1.125em;
+        white-space: nowrap;
+
+
+        a {
+            background-position: right bottom;
+            color: #0645ad;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            height: 3.07692308em;
+            position: relative;
+            padding-top: 1.25em;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 0.8125em;
+            cursor: pointer;
+
+            background-image: linear-gradient(to bottom, rgba(167, 215, 249, 0) 0, #a7d7f9 100%);
+            background-repeat: no-repeat;
+            background-size: 1px 100%;
+        }
+    }
+
+}
+
+
+// правая сторона
+.right-navigation {
+    float: right;
+    margin-top: 2.5em;
+}
+
+
+
+// левая навигация
+.panel {
+    width: 10em;
+    padding-left: 0.5em;
+
+    .logo {
+
+        a {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Wikipedia-logo-v2-ru-25-alt.svg/135px-Wikipedia-logo-v2-ru-25-alt.svg.png);
+            background-size: 135px auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 10em;
+            height: 160px;
+            text-decoration: none;
+
+        }
+
+
+    }
+}
+
+.vector-menu-content-left {
+    margin-left: 0.5em;
+    // padding-top: 0;
+    padding-bottom: 20px;
+
+
+    li {
+        // margin: 0;
+        // padding: 0.25em 0;
+        // font-size: 0.75em;
+        // line-height: 1.125em;
+        // word-wrap: break-word;
+    }
+}
+
+.vector-menu-content-left-list {
+    h3 {
+        display: block;
+        color: var(--color-subtle, #54595d);
+        margin: 0.5em 0 0 0.66666667em;
+        border: 0;
+        padding: 0.25em 0;
+        font-size: 0.75em;
+        font-weight: normal;
+        cursor: default;
+        background-image: linear-gradient(to right, rgba(200, 204, 209, 0) 0, #c8ccd1 33%, #c8ccd1 66%, rgba(200, 204, 209, 0) 100%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+    }
+
+}
+
+
+footer {
+    padding: 1.25em;
+    margin-left: 11em;
+}
+
+#footer-place {
+    li {
+        float: left;
+        margin-right: 1em;
+        line-height: 2;
+    }
+}
+
+#footer-icon {
+    float: right;
+
+    li {
+        float: left;
+        margin-left: 0.5em;
+        line-height: 2;
+        text-align: right;
+
+        color: var(--color-base, #202122);
+        margin: 0;
+        padding: 0.5em 0;
+        font-size: 0.75em;
+
+
+    }
+
+    a {
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: #f8f9fa;
+    }
+}
